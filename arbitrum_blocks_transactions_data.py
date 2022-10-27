@@ -71,7 +71,7 @@ def arb_transactions(count):
                                       'gasPrice': 'gas_price', 'transactionIndex': 'transaction_index'})
 
     # TODO: Review schema and dataframe datatypes to iron out datatype issue
-    # "value" was returning floats causing database upload issues, therefore performed quick casting workaround
+    # "value" returns floats causing database upload issues, therefore performed quick casting workaround
     txns_df = txns_df.astype(str)
     txns_df = txns_df.astype({"value": float})
     txns_df = txns_df.astype({"value": int})
