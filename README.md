@@ -1,7 +1,7 @@
 # blockchain_data
 Aggregating Web3 blockchain data and loading into a database for easy access
 
-To run this program, have a node addressa and insert into:
+To run this program, have a node address and insert into:
 - w3
 
 And a database ready to insert into:
